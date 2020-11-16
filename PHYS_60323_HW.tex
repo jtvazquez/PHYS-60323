@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{times}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\setlength {\textwidth}{6.6in}
+\hoffset=-1.0in
+\oddsidemargin=1.00in
+\marginparsep=0.0in
+\marginparwidth=0.0in                                                                               
+\setlength {\textheight}{9.0in}
+\voffset=-1.00in
+\topmargin=1.0in
+\headheight=0.0in
+\headsep=0.00in
+\footskip=0.50in                                         
+\setcounter{page}{1}
+\begin{document}
+\def\pos{\medskip\quad}
+\def\subpos{\smallskip \qquad}
+\newfont{\nice}{cmr12 scaled 1250}
+\newfont{\name}{cmr12 scaled 1080}
+\newfont{\swell}{cmbx12 scaled 800}
+
+\begin{center}
+    \textbf{PHYS 20323/60323: Fall 2020 - LaTeX Example}
+\end{center}
+
+\begin{enumerate}
+\item Consider a particle confined in a two-dimensional infinite square well
+\[ V(x,y) =
+  \begin{cases*}
+    $0$, & if $0 \leq x \leq a$ and $0 \leq y \leq a$ \\
+    $\infty$, & otherwise
+  \end{cases*}\]
+ The eigenfunctions have the form:
+ \begin{equation*}
+     \Psi(x,y) = \frac{2}{a}\sin{\frac{n\pi x}{a}}\sin{\frac{m\pi y}{a}}
+ \end{equation*}
+with the corresponding energies being given by:
+\begin{equation*}
+    E_{nm} = (n^2 + m^2) \frac{\pi^2\hbar^2}{2ma^2}
+\end{equation*}
+\begin{enumerate}
+    \item (5 points) What are the levels of degeneracy of the five lowest energy values? \newline
+    \item (5 points) Consider a perturbation given by:
+    \begin{equation*}
+        \hat{H'} = a^2V_0\delta\left(x-\frac{a}{2}\right)\delta\left(y-\frac{a}{2}\right)
+    \end{equation*}
+    Calculate the first order correction to the ground state energy. \newline
+\end{enumerate}
+\item \textbf{The following questions refer to stars in the Table below.} \newline
+Note: There may be multiple answers \newline \newline
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+   Name & Mass & Luminosity & Lifetime & Temperature & Radius \\
+   \hline
+    Zeta  & $60.M_{sun}$ & $10^6 L_{sun}$  & $8.0 \times 10^5$ years & &  \\
+    \hline
+    Epsilon & $6.0 M_{sun}$ & $10^3 L_{sun}$ & & $20,000$ K & \\
+    \hline
+    Delta & $2.0M_{sun}$ & & $5.0 \times 10^8$ years & & $2R_{sun}$\\
+    \hline
+    Beta & $1.3M_{sun}$ & $3.5L_{sun}$ & & & \\
+    \hline 
+    Alpha & $1.0M_{sun}$ & & & & 1 $R_{sun}$ \\ 
+    \hline 
+    Gamma & $0.7M_{sun}$ & & $4.5 \times 10^{10}$ years & $5000$ K & \\
+    \hline 
+\end{tabular}
+\begin{enumerate}
+    \item (4 points) Which of these stars will produce a planetary nebula at the end of their life. \newline
+    \item (4 points) Elements heavier than Carbon will be produced in which stars.
+\end{enumerate}
+\end{enumerate}
+\end{document}
